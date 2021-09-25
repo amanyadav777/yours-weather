@@ -4,7 +4,6 @@ const app = express();
 require('dotenv').config();
 
 const api_key = process.env.SECRET_KEY
-module.exports = {api_key};
 
 const port = process.env.PORT || 3000;
 

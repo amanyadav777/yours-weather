@@ -8,8 +8,6 @@ const inputTab = document.querySelector(".input-tab");
 const locationImg = document.querySelector(".icon");
 const showError = document.querySelector(".error");
 
-require('dotenv').config();
-const api_key = process.env.SECRET_KEY
 
 window.addEventListener("load", () => {
   let lon;
@@ -18,7 +16,7 @@ window.addEventListener("load", () => {
     lon = position.coords.longitude;
     lat = position.coords.latitude;
     const proxy = "https://cors-anywhere.herokuapp.com/";
-    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=88dbaa22eb1fd3133ddfddd1b4374587`;
     fetch(api)
     .then((response) => {
         return response.json();
@@ -36,7 +34,7 @@ window.addEventListener("load", () => {
 });
 
 searchTab.addEventListener("click", () => {
-  const cityapi = `https://api.openweathermap.org/data/2.5/weather?q=${inputTab.value}&appid=${api_key}`;
+  const cityapi = `https://api.openweathermap.org/data/2.5/weather?q=${inputTab.value}&appid=88dbaa22eb1fd3133ddfddd1b4374587`;
   fetch(cityapi)
     .then((response) => {
       if (response.ok) {
