@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Weather app</title>
+</head>
+<body>
+    <div class="error">
+    </div>
+    <div class="location-search">
+        <input type="search" placeholder="Search location" class="input-tab">
+        <i class="fa fa-search search-tab"></i>
+    </div>
+    <div class="error">
+        <h3 class="error-show"></h3>
+    </div>
+    <div class="location">
+        <h1 class="location-timezone">---</h1>
+        <div class="icon"><img src="./icons/unknown.png"></div>
+        
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+        <h2 class="temperature-degree">--</h2>
+        <span class="temperature-degree-span">°C</span>
+    </div>
+        <div class="temperture-description">------</div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
